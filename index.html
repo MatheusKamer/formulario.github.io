@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <h1 id="titulo">Cadastro de Software Developer</h1>
+            <hr>
+        </div>
+
+        <form>
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome:</strong></label>
+                    <input class="teste" type="text" name="nome" id="nome" placeholder="Ex: Matheus" required>
+                </div>
+
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome:</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Ex: Kamer" required>
+                </div>
+            </fieldset>
+
+            <div class="campo">
+                <label for="email"><strong>Email:</strong></label>
+                <input type="email" name="email" id="email" placeholder="Ex: seuemail@hotmail.com" required>
+            </div>
+            <hr>
+            <div class="campo">
+                <label><strong>Área de aplicação de desenvolvimento:</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">Fullstack
+                </label>
+            </div>
+
+            <div class="campo">
+                <label for="senioridade"><strong>Senioridade:</strong></label>
+                <select id="senioridade">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Selecione as técnologias que utiliza:</strong></label><br><br>
+                    <input type="radio" id="tecnologia1" name="tecnologia1" value="HTML">
+                    <label for="tecnologia1">HTML</label>
+                    <input type="radio" id="tecnologia2" name="tecnologia2" value="CSS">
+                    <label for="tecnologia2">CSS</label>
+                    <input type="radio" id="tecnologia2" name="tecnologia3" value="Javascript">
+                    <label for="tecnologia3">Javascript</label>
+                    <input type="radio" id="tecnologia4" name="tecnologia4" value="PHP">
+                    <label for="tecnologia4">PHP</label>
+                    <input type="radio" id="tecnologia5" name="tecnologia5" value="C#">
+                    <label for="tecnologia5">C#</label>
+                    <input type="radio" id="tecnologia6" name="tecnologia6" value="Python">
+                    <label for="tecnologia6">Python</label>
+                    <input type="radio" id="tecnologia7" name="tecnologia7" value="Java">
+                    <label for="tecnologia7">Java</label>
+                </div>
+            </fieldset>
+            <hr>
+            <div class="campo">
+                <br>
+                <label><strong>Conte-nos um pouco da sua experiência:</strong></label>
+                <textarea rows="6" cols="73.2" id="experiencia" name="experiencia" style="resize: none;"></textarea>
+            </div>
+
+            <a class="btn" href="#">Enviar</a>
+
+        </form>
+    </div>
+</body>
+
+</html>
